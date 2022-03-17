@@ -12,7 +12,7 @@ public class ObjMove : MonoBehaviour
     }
     public void Update()
     {
-        transform.Translate (Vector3.right * movespeed * Time.deltaTime);
+        transform.Translate (Vector3.forward * movespeed * Time.deltaTime);
     }
 
     void OnCollisionEnter3D(Collision col)
