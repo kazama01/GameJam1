@@ -14,8 +14,10 @@ GameObject:
   - component: {fileID: 1667635281383869372}
   - component: {fileID: 1667635281383869371}
   - component: {fileID: 1667635281383869360}
+  - component: {fileID: 3327695368478521226}
+  - component: {fileID: 1208584081152056457}
   m_Layer: 0
-  m_Name: playerPrefab
+  m_Name: UFO1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -107,7 +109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dfb1c298001bd04ebb2af4326e48c85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  userDirection: {x: 1, y: 0, z: 0}
+  force: {x: 0, y: 0, z: 0}
 --- !u!54 &1667635281383869360
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -122,5 +124,33 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!114 &3327695368478521226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1667635281383869370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dfb1c298001bd04ebb2af4326e48c85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: {x: 0, y: 0, z: 10}
+--- !u!114 &1208584081152056457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1667635281383869370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06f2c2fa33e0d92458c70698731f1f9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gm: {fileID: 0}
+  correctParkArea: {fileID: 4806159834239590513, guid: d090a1939b1b1154193754402469e033,
+    type: 3}

@@ -56,10 +56,16 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\CarSpawn.cs" />
+    <Compile Include="Assets\Scripts\BtnScripts\EraseBtn.cs" />
+    <Compile Include="Assets\Scripts\DeleteObj.cs" />
+    <Compile Include="Assets\Scripts\DetectParkArea.cs" />
+    <Compile Include="Assets\Scripts\DragScript\DragAndDrop.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\ObjDestruct.cs" />
     <Compile Include="Assets\Scripts\ObjMove.cs" />
+    <Compile Include="Assets\Scripts\SpawnScript\CarSpawn.cs" />
+    <Compile Include="Assets\Scripts\SpawnScript\SpawnObs.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

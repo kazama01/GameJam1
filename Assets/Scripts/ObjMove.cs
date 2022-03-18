@@ -4,22 +4,10 @@ using UnityEngine;
 
 public class ObjMove : MonoBehaviour
 {
-    public static int movespeed = 5;
-    public Vector3 userDirection = Vector3.right;
+    public Vector3 force;
 
-    public void Start()
+    private void LateUpdate()
     {
-    }
-    public void Update()
-    {
-        transform.Translate (Vector3.forward * movespeed * Time.deltaTime);
-    }
-
-    void OnCollisionEnter3D(Collision col)
-    {
-        if (col.gameObject.tag == "Wall")
-        {
-            movespeed = -movespeed;
-        }
+        gameObject.GetComponent<Rigidbody>().AddForce(force);
     }
 }
