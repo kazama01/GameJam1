@@ -68,6 +68,9 @@
     <Compile Include="Assets\Scripts\SpawnScript\SpawnObs.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Parkgarage\parkinggarage_readMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2019.4.36f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>

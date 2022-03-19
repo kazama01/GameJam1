@@ -21,4 +21,10 @@ public class MainMenu : MonoBehaviour
     {
         CreditPanel.SetActive(false);
     }
+
+    public void ExitBtn()
+    {
+        Application.Quit();
+        Debug.Log("exit");
+    }
 }

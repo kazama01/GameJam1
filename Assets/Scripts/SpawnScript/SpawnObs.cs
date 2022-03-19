@@ -17,8 +17,8 @@ public class SpawnObs : MonoBehaviour
         GameObject Clone;
         if (!isObsMax)
         {
-            Clone = Instantiate(Obs1, new Vector3(0, 2, 0), Quaternion.identity);
-            Clone.transform.rotation = Quaternion.Euler(new Vector3 (0,45,0));
+            Clone = Instantiate(Obs1, new Vector3(0, 1, 0), Quaternion.identity);
+            Clone.transform.rotation = Quaternion.Euler(new Vector3 (0,-45,0));
             Clone.GetComponent<ObjDestruct>().Eraser = GameObject.Find("Erase");
             GameObject.Find("Erase").GetComponent<EraseBtn>().IsEraseClick = false;
         }
@@ -29,8 +29,8 @@ public class SpawnObs : MonoBehaviour
         GameObject Clone;
         if (!isObsMax)
         {
-            Clone = Instantiate(Obs2, new Vector3(0, 2, 0), Quaternion.identity);
-            Clone.transform.rotation = Quaternion.Euler(new Vector3(0, -45, 0));
+            Clone = Instantiate(Obs2, new Vector3(0, 1, 0), Quaternion.identity);
+            Clone.transform.rotation = Quaternion.Euler(new Vector3(0, 45, 0));
             Clone.GetComponent<ObjDestruct>().Eraser = GameObject.Find("Erase");
             GameObject.Find("Erase").GetComponent<EraseBtn>().IsEraseClick = false;
         }
