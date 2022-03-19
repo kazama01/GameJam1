@@ -8,11 +8,12 @@ public class CarSpawn : MonoBehaviour
     public GameObject UFO2;
     public GameObject UFO3;
 
+    
     int ran;
     public int xPos;
     public int zPos;
-    public int carCount;
-
+    public float delay;
+    public float decreaseDelay;
     void Start()
     {
         StartCoroutine(CarDrop());
@@ -20,7 +21,7 @@ public class CarSpawn : MonoBehaviour
 
     IEnumerator CarDrop()
     {
-        while (carCount < 6) 
+        while (true) 
         {
             xPos = Random.Range(-11, 12);
             zPos = Random.Range(-21, -21);
@@ -35,15 +36,17 @@ public class CarSpawn : MonoBehaviour
             {
                 Instantiate(UFO3, new Vector3(xPos, 1, zPos), Quaternion.identity);
             }
-           
-            yield return new WaitForSeconds(5);
-            carCount += 1;
+            if (delay > 1)
+            {
+                delay -= decreaseDelay;
+            }
+            yield return new WaitForSeconds(delay);
         }
        
     }
 
     private void Update()
     {
-       ran = Random.Range(0, 2);
+       ran = Random.Range(0, 3);
     }
 }
